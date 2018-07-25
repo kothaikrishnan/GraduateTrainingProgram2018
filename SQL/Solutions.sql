@@ -121,3 +121,11 @@ record count-1
    (select d.dept_id,d.depmanager,count(e.e_id)as e_id from dept d inner join employee e on d.dept_id=e.dept_id group by d.dept_id);
   
   record count-1
+  
+  /*Select the Employees who has Tim Cook as their manager*/
+  
+  select e_id,name,salary from
+  (select e.e_id as e_id,e.name as name,e.salary as salary from employee e inner join dept d on e.dept_id=d.dept_id and d.depmanager='tim cook');   
+  
+  
+record count-0
