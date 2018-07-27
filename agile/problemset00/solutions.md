@@ -93,9 +93,9 @@ Retrospective- Retrospectives to find out what's working so the team can continu
 
 /*12)What is the difference between Sprint Planning Meeting and Sprint Retrospective Meeting?*/
 
-Sprint Planning-Starting day of sprint. The product owner describes the highest priority features to the team. The entire team agrees to complete a set of product backlog items.
+Sprint Planning meeting-It is attended by team member,scrum master,product owner.Starting day of sprint. The product owner describes the highest priority features to the team. The entire team agrees to complete a set of product backlog items.
 
-Sprint Retrospective- It is attended only by the team member, the scrum master and the product owner. The product owner is optional. Start the meeting by having all team members answer two questions;
+Sprint Retrospective- It is attended only by the team member, the scrum master and the product owner(optional). Start the meeting by having all team members answer two questions;
 1) What went well during the sprint?
 2) What doesn't well during the sprint?
 3) What could be improved in the next sprint?
