@@ -6,7 +6,7 @@
 
 The Agile Software Development Method Uses an Iterative and Team-Based Approach
 
-The other method uses a linear approach where the stages of the software development process must be completed in a sequential order.
+The other methodology uses a linear approach where the stages of the software development process must be completed in a sequential order.
 
 /*2)What are the most important components of Agile?*/
 
