@@ -97,7 +97,7 @@ Sprint Planning meeting-It is attended by team member,scrum master,product owner
 
 Sprint Retrospective- It is attended only by the team member, the scrum master and the product owner(optional). Start the meeting by having all team members answer two questions;
 1) What went well during the sprint?
-2) What doesn't well during the sprint?
+2) What went not well during the sprint?
 3) What could be improved in the next sprint?
 4) Appreciation
 
