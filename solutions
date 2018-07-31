@@ -1,0 +1,93 @@
+/*1.List full details of all hotels.*/
+
+select * from hotel h inner join room r on h.hotelno=r.hotelno;
+
+record count-12
+
+/*2.List full details of all hotels in New York.*/
+
+select * from hotel h inner join room r on h.hotelno=r.hotelno where city='newyork';
+
+record count-4
+
+/*3.List the names and cities of all guests, ordered according to their cities.*/
+
+select * from guest order by city;
+
+record count-6
+
+/*4.List all details for non-smoking rooms in ascending order of price.*/
+
+select * from hotel h inner join  room r on h.hotelno=r.hotelno where type='n' order by price;
+
+record count-8
+
+/*5.List the number of hotels there are.*/
+
+select count(hotelno) as no_of_hotel from hotel;
+
+record count-1
+
+/*6.List the cities in which guests live. Each city should be listed only once.*/
+
+select distinct city from guest;
+
+record count-4
+
+/*7.List the average price of a room.*/
+
+select avg(price) as avg_price_room from room;
+
+record count-1
+
+/*8.List hotel names, their room numbers, and the type of that room.*/
+
+select h.name,r.roomno,r.type from hotel h inner join room r on h.hotelno=r.hotelno;
+
+record count-12
+
+/*9.List the hotel names, booking dates, and room numbers for all hotels in New York.*/
+
+select h.name,b.date_from,b.date_to,b.roomno from hotel h inner join book b on h.hotelno=b.hotelno where city='newyork';
+
+record count-3
+
+/*10.What is the number of bookings that started in the month of September?*/
+
+select count(*) as no_of_booking from book where date_from between'1999-09-01' and '1999-09-30';
+
+record count-1
+
+/*11.List the names and cities of guests who began a stay in New York in August.*/
+
+select g.gname,g.city from hotel h inner join book b on h.hotelno=b.hotelno 
+                                   inner join guest g on b.guestno=g.guestno 
+where h.city='newyork' and b.date_from between '1999-08-01' and '1999-08-31';
+
+record count-2
+
+/*12.List the hotel names and room numbers of any hotel rooms that have not been booked.*/
+
+select h.name,r.roomno from hotel h inner join room r on h.hotelno=r.hotelno where roomno not in(select roomno from book); 
+
+record count-5
+
+/*13.List the hotel name and city of the hotel with the highest priced room.*/
+
+select h.name,h.city from hotel h inner join room r on h.hotelno=r.hotelno 
+where price=(select max(price)as price from room);
+
+record count-1
+
+/*14.List hotel names, room numbers, cities, and prices for hotels that have rooms with prices lower than the lowest priced room in a Boston hotel.*/
+
+select h.name,r.roomno,h.city,r.price from room r inner join hotel h on r.hotelno=h.hotelno 
+where price<(select min(price) from room r inner join hotel h on r.hotelno=h.hotelno where city='boston');
+
+record count-2
+
+/*15.List the average price of a room grouped by city.*/
+
+select avg(price) as avg_price_room from room r inner join hotel h on h.hotelno=r.hotelno group by city;
+
+record count-3
