@@ -1,3 +1,8 @@
+
+
+
+
+
 /*1.List full details of all hotels.*/
 
 select * from hotel h inner join room r on h.hotelno=r.hotelno;
