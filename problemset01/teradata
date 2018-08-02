@@ -15,7 +15,7 @@ record count-4
 
 /*3.List the names and cities of all guests, ordered according to their cities.*/
 
-select * from guest order by city;
+select gname,city from guest order by city;
 
 record count-6
 
