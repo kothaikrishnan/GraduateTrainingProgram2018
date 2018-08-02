@@ -91,6 +91,6 @@ record count-2
 
 /*15.List the average price of a room grouped by city.*/
 
-select avg(price) as avg_price_room from room r inner join hotel h on h.hotelno=r.hotelno group by city;
+select city,avg(price) as avg_price_room from room r inner join hotel h on h.hotelno=r.hotelno group by city;
 
 record count-3
