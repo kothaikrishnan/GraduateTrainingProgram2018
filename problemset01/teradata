@@ -3,7 +3,7 @@
 
 /*1.List full details of all hotels.*/
 
-select * from hotel h inner join room r on h.hotelno=r.hotelno;
+select h.hotelno,h.name,h.city,r.roomno from hotel h inner join room r on h.hotelno=r.hotelno;
 
 record count-12
 
