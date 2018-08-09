@@ -1,0 +1,59 @@
+
+
+/*1.What is an Environment.*/
+
+It is a collection of hardware and software resources that provide setup which helps in development,testing,integration and deployment.
+
+/*2.Name different Environment used in Cigna.*/
+
+Development
+System
+Integration
+PVS/UAT
+Production
+
+/*3.Does different Environment differ.*/
+
+No, It should be similar kind of environment. The end product needs to be tested in similar kinds of envionment.
+
+/*4.Kind’s of test based environment we use in Cigna.*/
+
+Unit
+System
+Integration
+Acceptance
+Performance
+
+/*5.What is CI.*/
+
+Continuous Integration (CI) is a development practice where developers integrate code into a shared repository frequently, preferably several times a day. 
+Each integration can then be verified by an automated build and automated tests.
+key benefits of integrating regularly is that you can detect errors quickly and locate them more easily. 
+
+/*6.What is CD.*/
+
+Continuous delivery (CD) is an extension of the concept of continuous integration (CI).
+Whereas CI deals with the build/test part of the development cycle for each version, CD focuses on what happens with a committed change after that point.
+Any commit that passes the automated tests can be considered for release and to get feedback as quickly as possible. 
+
+/*7.How CI/CD fits in Agile.*/
+
+In agile,continuous integration(CI) that requires team members to integrate their work frequently. Every person integrates at least daily, which leads to multiple integrations each day. Integrations are verified by an automated build that runs regression tests to detect integration errors as quickly as possible. 
+CD focuses on what happens with a committed change to the system.
+Any commit that passes the automated tests can be considered for release and to get feedback as quickly as possible.In agile, at the end of sprint to deliver the working product that relates the continuous delivery 
+
+/*8.What do we mean by building and packaging.*/
+
+Building-The source code that is developed that is converted into executable code.
+
+Packaging-files being kept together as a package.
+
+/*9.What is an artifact.*/
+
+Artifacts is one of many kinds of real end products produced during the development of software.
+
+/*10.Name some build tools.*/
+
+Maven
+Gradle
+Apache-ANT
