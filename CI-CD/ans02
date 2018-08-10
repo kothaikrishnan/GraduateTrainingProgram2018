@@ -1,0 +1,57 @@
+
+
+
+/*1.Why should you use a version control tool?*/
+
+It stores source code and document several times a day. We can update regularly, it helps others to understand easily. It maintains history.
+
+/*2. Which of the following correctly describes what a unit test is*/
+
+        a. It is a level of software testing where the individual units are tested.
+
+        b. Unit tests generally involve validating how various modules interact with each other.
+
+        c. Unit tests help to measure the response time of an application when subjected to high loads
+
+        d. Unit tests usually involve asserting the final output against the expected output using the inputs provided as part of the tests.
+
+ ans:a,d
+
+/*3. What are the various build tools used in Java?*/
+
+Maven 
+Gradle
+Apache ANT
+
+/*4. One of your projects fail compilation errors due to missing JAR files that are needed for your project.
+Which of the following tools can help to fix the errors.*/
+
+a. Tomcat Webserver b. GIT c. Apache ANT d. Apache Maven
+
+ans:d.Apache Maven
+
+/*5. What is meant by a "commit" in a version control Tool?*/
+
+Its like saving the source code. Every commit creates a new version and it tells the changes made through a commit message.
+
+/*6. Which utility can be used to move deployment packages across servers;*/
+
+a. Git   b. Junit c. SSH d. Remote Desktop connection.
+
+ans:c
+ 
+
+/*7. How is system testing different from unit testing and Integration testing?*/
+
+unit testing-where individual units/ components of a software are tested
+system testing- Integrating unit part and test the entire application where endproduct meets all the acceptance criteria.
+Integration testing- where individual units are combined and tested as a group.
+                
+
+/*8. What are the some of the metrics that are measured/evaluated during a performance testing phase?*/
+
+Software applications will perform well under their expected workload.It checks speed,scalability,stability.
+
+/*9. What is meant by Regression testing?*/
+
+Regression testing is the process of testing changes to code to make sure that the existing code still works with the new changes.
