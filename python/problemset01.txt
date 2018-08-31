@@ -1,0 +1,66 @@
+
+
+1)get first name and last name from user and print your full name 
+
+val1=raw_input("enter a first name:")
+print(val1)
+val2=raw_input("enter a last name:")
+print(val2)
+print("full name:"+str(val1)+str(val2))
+print("first name is %s,last name is %s"%(val1,val2))
+
+2) get your full name, age as input from user and print first name and last name , age using string slicing
+ i) 2 raw_input get name  and age 
+ ii) print first name and last name and age 
+ 
+val=raw_input("enter your full name and age:")
+firstname=val.split()[0]
+lastname=val.split()[1]
+age=val.split()[2]
+print("first name:"+str(firstname))
+print("last name:"+str(lastname))
+print("age:"+str(age))
+
+3)Calculating your birth number in numerology
+26/11/1978
+2+6+1+1+1+7+8 = 8
+
+a=raw_input("enter your birth date in order dd/mm/yy:")
+b=int(a[0])+int(a[1])+int(a[3])+int(a[4])+int(a[6])+int(a[7])+int(a[8])+int(a[9])
+print(b)
+b=str(b)
+if(b>9):
+ c=int(b[0])+int(b[1])
+ print(c)
+if(c>9):
+ c=str(c)
+ d=int(c[0])+int(c[1])
+ print(d)
+
+4) Write a Python program to perform sum of three given integers. 
+       However, if any of the two values are equal then sum will be zero (eg : 2+1+1 = 0)
+
+ 
+a=raw_input("enter a number:")
+print(a)
+x=int(a[0])
+y=int(a[1])
+z=int(a[2])
+if(x==y):
+    d=0
+    print(d)
+elif(y==z):
+    d=0
+    print(d)
+elif(z==x):
+    d=0
+    print(d)
+else:
+   print(x+y+z)
+
+ 
+
+
+
+
+
