@@ -1,4 +1,4 @@
-<Problem set 06> Sep 07,2018
+<Problem set 05> Sep 07,2018
 Submitted by kothai.krishnan
 
 A newly opened multinational brand has decided to base their company logo on the three most common characters in the company name. They are now trying out various combinations of company names and logos based on this condition. Given a string S, which is the company name in lowercase letters, your task is to find the top three most common characters in the string.
