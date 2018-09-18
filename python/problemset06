@@ -1,0 +1,34 @@
+<Problem set 06> Sep 07,2018
+Submitted by kothai.krishnan
+
+A newly opened multinational brand has decided to base their company logo on the three most common characters in the company name. They are now trying out various combinations of company names and logos based on this condition. Given a string S, which is the company name in lowercase letters, your task is to find the top three most common characters in the string.
+Print the three most common characters along with their occurrence count.
+Sort in descending order of occurrence count.
+If the occurrence count is the same, sort the characters in alphabetical order.
+For example, according to the conditions described above,
+
+GOOGLE would have it's logo with the letters G,O,E.
+
+Input Format:-
+A single line of input containing the string S.
+
+Constraints:-
+3 <len(S)<100
+
+from heapq import nlargest
+name = list(raw_input("enter the name:"))
+a = {}
+if(len(name) > 3 and len(name) < 100):
+    for i in name:
+        a[i] = name.count(i)
+    print(a)
+    if(len(a) > 3):
+        three_largest = nlargest(3, a, key=a.get)
+        for i in three_largest:
+            for k, v in a.iteritems():
+                if(k == i):
+                    print k, v
+    else:
+        print("enter atleast 3 distinct characters")
+else:
+    print("enter correct value")
