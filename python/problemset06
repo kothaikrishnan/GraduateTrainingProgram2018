@@ -1,34 +1,37 @@
 <Problem set 06> Sep 7, 2018
  Submitted by kothai.krishnan
 
-test_no=int(input(''))
-A=set()
-B=set()
-out=[]
-try:
-    if(test_no>0 and test_no<5):
-        for i in range(test_no):
-            no1=int(input(''))
-            if (no1 > 0 and no1 < 100):
-                for j in range(no1):
-                    val=int(input())
-                    A.add(val)
-            else:
-                print('Only 0-9 values in a set')
-            no2=int((input('')))
-            if (no2 > 0 and no2 < 100):
-                for l in range(no2):
-                    val1 = int(input())
-                    B.add(val1)
-            else:
-                print('Only 0-9 values in a set')
-            if(A.issubset(B)):
-                out.append('True')
-            else:
-                out.append('False')
-        for x in out:
-            print x
-    else:
-        print('Enter 1-4 testcases')
-except Exception as err:
-    print(err)
+You are given two sets, A and B . 
+Your job is to find whether set A is a subset of set B .
+
+If set A is subset of set B , print True.
+If set A is not a subset of set B , print False.
+
+Input Format:-
+
+The first line will contain the number of test cases, T . 
+The first line of each test case contains the number of elements in set A .
+The second line of each test case contains the space separated elements of set A .
+The third line of each test case contains the number of elements in set B .
+The fourth line of each test case contains the space separated elements of set B .
+
+Constraints:-
+* 0 < T < 5
+* 0 <Number of elements in each set < 10
+
+n=raw_input("enter number of test case")
+for i in range(int(n)):
+    i=i+1
+    print("Test case%s"%i)
+    a=raw_input("enter number of n1")
+    num1=[]
+    for i in range(int(a)):
+        n1=raw_input("enter %s numbers"%a)
+        num1.append(n1)
+
+    b=raw_input("enter number of n2")
+    num2=[]
+    for i in range(int(b)):
+        n2=raw_input("enter %s numbers"%b)
+        num2.append(n2)
+    print("Testcase  is",set(num1).issubset(set(num2)))
